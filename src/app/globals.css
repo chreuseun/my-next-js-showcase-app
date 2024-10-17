@@ -25,3 +25,73 @@ body {
     text-wrap: balance;
   }
 }
+
+/* MY SETUP  */
+/* default dark theme */
+.default-theme {
+  /* main colors */
+  --color-primary-brand: #00bfff; /* Electric Blue */
+  --color-secondary-brand: #ffd700; /* Bright Gold */
+
+  /* background colors */
+  --color-bg-1: #0a0a0a; /* Jet Black */
+  --color-bg-2: #2a2a2a; /* Gunmetal */
+
+  /* font colors */
+  --color-font-primary: #ffffff; /* White */
+  --color-font-secondary: #dcdcdc; /* Gainsboro for softer text */
+
+  /* border colors */
+  --color-border: #444444; /* Medium Gray for borders */
+  --color-border-alt: #888888; /* Light Gray for dark borders */
+
+  /* success colors */
+  --color-success: #4caf50; /* Green */
+  --color-success-alt: #388e3c; /* Dark Green */
+
+  /* error/negative colors */
+  --color-error: #e74c3c; /* Bright Red for errors */
+  --color-error-alt: #c0392b; /* Strong Red for emphasis */
+
+  /* informational colors */
+  --color-info: #ffca28; /* Amber for informational status */
+  --color-info-alt: #f39c12; /* Golden Orange for additional information */
+
+  /* pending colors */
+  --color-pending: #00bcd4; /* Cyan for pending status */
+  --color-pending-alt: #009688; /* Teal for emphasis */
+}
+
+.default-theme-light {
+  /* main colors */
+  --color-primary-brand: #0077ff; /* Soft Electric Blue */
+  --color-secondary-brand: #ffcc00; /* Soft Gold */
+
+  /* background colors */
+  --color-bg-1: #ffffff; /* White */
+  --color-bg-2: #f0f0f0; /* Light Gray */
+
+  /* font colors */
+  --color-font-primary: #000000; /* Black */
+  --color-font-secondary: #333333; /* Dark Gray for softer text */
+
+  /* border colors */
+  --color-border: #dddddd; /* Light Gray for borders */
+  --color-border-alt: #aaaaaa; /* Medium Gray for dark borders */
+
+  /* success colors */
+  --color-success: #a5d6a7; /* Light Green */
+  --color-success-alt: #66bb6a; /* Medium Green */
+
+  /* error/negative colors */
+  --color-error: #ef5350; /* Light Red for errors */
+  --color-error-alt: #c62828; /* Strong Red for emphasis */
+
+  /* informational colors */
+  --color-info: #ffd54f; /* Light Amber for informational status */
+  --color-info-alt: #ffb300; /* Medium Amber for additional information */
+
+  /* pending colors */
+  --color-pending: #80deea; /* Light Cyan for pending status */
+  --color-pending-alt: #26c6da; /* Medium Teal for emphasis */
+}
