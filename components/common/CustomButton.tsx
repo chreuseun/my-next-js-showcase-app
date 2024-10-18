@@ -9,13 +9,14 @@ const CustomButton: React.FC<{
   return (
     <button
       className={`
-        bg-brand2 border 
+        bg-brand2 
+        border 
         hover:bg-success1 
         hover:text-text1
         text-bg2
         font-bold
         py-2 px-4 
-        rounded-lg ${className}`}
+        rounded-lg ${className} p-0`}
     >
       {children ? children : label}
     </button>
