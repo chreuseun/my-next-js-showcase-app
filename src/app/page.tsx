@@ -29,8 +29,12 @@ const LandingPage = () => {
         />
         <CustomButton className="mt-8" label="Login" />
         <CustomButton
-          className="mt-5 py-0 px-0 text-text2 font-thin underline border-none bg-inherit cursor-pointer hover:bg-inherit"
+          className=" mt-5 py-0 px-0 text-text2 font-thin underline border-none bg-inherit cursor-pointer hover:bg-inherit"
           label="Create a new account"
+        />
+        <CustomButton
+          className="mt-2 py-0 px-0 text-brand1 font-thin underline border-none bg-inherit cursor-pointer hover:bg-inherit hover:text-brand2"
+          label="Need new account? Sign-Up"
         />
       </div>
     </div>
