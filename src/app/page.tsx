@@ -32,7 +32,6 @@ const LandingPage = () => {
           className="mt-3 text-center"
         />
         <CustomButton className="mt-8" label="Login" />
-
         <Link
           className="mt-4 flex flex-col justify-center items-stretch"
           href={SIGNUP_PATH}
@@ -42,7 +41,6 @@ const LandingPage = () => {
             label="Create a new account"
           />
         </Link>
-
         <CustomButton
           className="text-sm py-0 px-0 text-border2 font-thin underline border-none bg-inherit cursor-pointer hover:bg-bg2 hover:text-brand2"
           label="Need new account? Sign-Up"
