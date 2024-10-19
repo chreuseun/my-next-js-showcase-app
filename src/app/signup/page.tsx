@@ -2,5 +2,4 @@ const SignUpPage = () => {
   return <div> Sign Up Page</div>;
 };
 
-
-export defaul SignUpPage
+export default SignUpPage;

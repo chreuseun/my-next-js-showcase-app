@@ -1,6 +1,10 @@
+import { Metadata } from "next";
+import { redirect } from "next/navigation";
+
 import TextInput from "@root/components/common/TextInput";
 import CustomButton from "@root/components/common/CustomButton";
-import { Metadata } from "next";
+import Link from "next/link";
+import { SIGNUP_PATH } from "@root/routes/paths";
 
 export const metadata: Metadata = {
   title: "Next.Js Showcase | Login page",
@@ -28,12 +32,19 @@ const LandingPage = () => {
           className="mt-3 text-center"
         />
         <CustomButton className="mt-8" label="Login" />
+
+        <Link
+          className="mt-4 flex flex-col justify-center items-stretch"
+          href={SIGNUP_PATH}
+        >
+          <CustomButton
+            className="text-sm py-0 px-0 text-border2 font-thin underline border-none bg-inherit cursor-pointer hover:bg-bg2"
+            label="Create a new account"
+          />
+        </Link>
+
         <CustomButton
-          className=" mt-5 py-0 px-0 text-text2 font-thin underline border-none bg-inherit cursor-pointer hover:bg-inherit"
-          label="Create a new account"
-        />
-        <CustomButton
-          className="mt-2 py-0 px-0 text-brand1 font-thin underline border-none bg-inherit cursor-pointer hover:bg-inherit hover:text-brand2"
+          className="text-sm py-0 px-0 text-border2 font-thin underline border-none bg-inherit cursor-pointer hover:bg-bg2 hover:text-brand2"
           label="Need new account? Sign-Up"
         />
       </div>
