@@ -29,6 +29,11 @@ const config: Config = {
         info2: "var(--color-info-alt)",
         pending1: "var(--color-pending)",
         pending2: "var(--color-pending-alt)",
+        darkText: "#272727",
+        lightText: "#EFEFEF",
+      },
+      fontSize: {
+        smallText: "12px",
       },
     },
   },
