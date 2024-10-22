@@ -1,11 +1,19 @@
-import { FormEventHandler } from "react";
 import FormSubmitButton from "../common/FormSubmitButton";
 import FormTextInput from "../common/FormTextInput";
 
 const SIGNUP_FORM_CONFIG = {
-  username: "username",
-  password: "password",
-  repeat_password: "repeat_password",
+  username: {
+    id: "username",
+    label: "Username",
+  },
+  password: {
+    id: "password",
+    label: "Password",
+  },
+  repeat_password: {
+    id: "repeat_password",
+    label: "Repeat password",
+  },
 };
 
 const SignUpForm = () => {
@@ -34,11 +42,14 @@ const SignUpForm = () => {
 
   return (
     <form>
-      <FormTextInput label="Username" id="username" required />
-      <FormTextInput label="Password" id="password" required type="password" />
+      <FormTextInput {...SIGNUP_FORM_CONFIG.username} required />
       <FormTextInput
-        label="Repeat Password"
-        id="repeat_password"
+        {...SIGNUP_FORM_CONFIG.password}
+        required
+        type="password"
+      />
+      <FormTextInput
+        {...SIGNUP_FORM_CONFIG.repeat_password}
         required
         type="password"
       />
