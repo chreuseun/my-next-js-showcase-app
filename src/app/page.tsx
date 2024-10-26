@@ -1,6 +1,8 @@
+import Feeds from "@root/components/Feeds";
+
 const Home = () => {
   return (
-    <main className="border border-gray-200 w-full ">
+    <main className="border border-gray-200 w-full">
       <div className="p-6">
         <h1 className="text-5xl text-center font-900 text-dark">
           Discover & Share
@@ -10,12 +12,10 @@ const Home = () => {
           </div>
         </h1>
         <p className="text-secondary mt-5 text-center text-lg">
-          Promptopia is an open-source AI prompting tool for
-          <br />
-          modern world to discover, create and share creative
-          <br />
-          prompts
+          Promptopia is an open-source AI prompting tool for modern world to
+          discover, create and share creative prompts
         </p>
+        <Feeds />
       </div>
     </main>
   );
