@@ -21,6 +21,7 @@ const config: Config = {
         customOrange: "#FF8C00", // Orange
       },
       fontWeight: {
+        "800": "800",
         "900": "900",
       },
       textColor: {
