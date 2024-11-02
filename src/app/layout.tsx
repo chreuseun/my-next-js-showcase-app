@@ -1,17 +1,9 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "@root/styles/globals.css";
 
-const geistSans = localFont({
-  src: "../../assets/fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "../../assets/fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import type { Metadata } from "next";
+import Nav from "@components/Nav";
+import Provider from "@components/Provider";
+import TestFlexLayout from "@components/TestFlexLayout";
 
 export const metadata: Metadata = {
   title: "Promptopia",
@@ -26,10 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body
-        className={`main ${geistSans.variable} ${geistMono.variable} ${trendsFonts.variable} antialiased bg-primaryBG`}
-      >
-        {children}
+      <body className="text-primaryText bg-primaryBG">
+        <Nav />
+        {/* <TestFlexLayout /> */}
+        {/* <div className="">{children}</div> */}
       </body>
     </html>
   );
