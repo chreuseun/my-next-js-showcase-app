@@ -32,7 +32,10 @@ const navConfig: {
     label: "Contacts",
     id: "contacts",
   },
-  SKILLS: { label: "Skills", id: "skill" },
+  SKILLS: {
+    label: "Skills",
+    id: "skill",
+  },
 };
 
 const Nav = () => {
@@ -49,10 +52,10 @@ const Nav = () => {
   };
 
   return (
-    <div className="border-b pb-2 border-customGold px-10 pt-4 flex flex-row">
+    <div className="border-b-8 pb-2 border-customGold px-10 pt-4 flex flex-row">
       <Image
         src={appLogo}
-        className="select-none md:mr-4"
+        className="select-none md:mr-4 cursor-pointer"
         alt="eundev icon"
         height={90}
       />
@@ -64,8 +67,6 @@ const Nav = () => {
         {renderNavButton(navConfig.ABOUT)}
         {renderNavButton(navConfig.CONTACTS)}
       </div>
-
-      {/* </div> */}
     </div>
   );
 };

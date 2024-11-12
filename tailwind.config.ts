@@ -15,7 +15,7 @@ const config: Config = {
         testColor: "#446712",
 
         // my custom color
-        primaryBG: "#F0F0F0",
+        primaryBG: "#FFFDF6",
         secondaryBG: "#EAEAEA",
 
         customGold: "#FFD700", // Gold

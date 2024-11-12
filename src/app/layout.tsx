@@ -4,10 +4,11 @@ import type { Metadata } from "next";
 import Nav from "@components/Nav";
 import Provider from "@components/Provider";
 import TestFlexLayout from "@components/TestFlexLayout";
+import { APPLICATION } from "@root/constants/copies";
 
 export const metadata: Metadata = {
-  title: "Promptopia",
-  description: "Discover & Share Prompts",
+  title: APPLICATION.title,
+  description: APPLICATION.description,
 };
 
 export default function RootLayout({
@@ -20,8 +21,7 @@ export default function RootLayout({
       <head />
       <body className="text-primaryText bg-primaryBG">
         <Nav />
-        {/* <TestFlexLayout /> */}
-        {/* <div className="">{children}</div> */}
+        {children}
       </body>
     </html>
   );

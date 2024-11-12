@@ -1,5 +1,6 @@
 const APPLICATION = {
-  title: "Promptopia",
+  title: "EunDev",
+  description: "Crafting impactful digital experiences seamlessly.",
 };
 
 const PAGES = {
