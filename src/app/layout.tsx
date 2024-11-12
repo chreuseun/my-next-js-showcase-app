@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body className="text-primaryText bg-primaryBG">
+      <body className="flex h-screen w-screen flex-col justify-center items-stretch text-primaryText bg-primaryBG">
         <Nav />
         {children}
       </body>

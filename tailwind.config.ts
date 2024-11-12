@@ -15,11 +15,11 @@ const config: Config = {
         testColor: "#446712",
 
         // my custom color
-        primaryBG: "#FFFDF6",
+        primaryBG: "#FFFCF1",
         secondaryBG: "#EAEAEA",
 
-        customGold: "#FFD700", // Gold
-        customOrange: "#FF8C00", // Orange
+        customGold: "#C67C00",
+        customOrange: "#E67600",
 
         border1: "#CFCFCF",
         border2: "#DFDFDF",

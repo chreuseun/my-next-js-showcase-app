@@ -52,7 +52,7 @@ const Nav = () => {
   };
 
   return (
-    <div className="border-b-8 pb-2 border-customGold px-10 pt-4 flex flex-row">
+    <div className="border-b-8 pb-2 border-customGold px-10 pt-4 flex flex-row shadow-md">
       <Image
         src={appLogo}
         className="select-none md:mr-4 cursor-pointer"
