@@ -18,7 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head />
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body className="flex h-screen w-screen flex-col justify-center items-stretch text-primaryText bg-primaryBG">
         <Nav />
         {children}
