@@ -11,6 +11,7 @@ const HOME_PAGE_COPIES = {
 const Home = () => {
   return (
     <main className="flex-grow overflow-y-auto w-full  p-4">
+      <div>HOME</div>
       {/* {Array.from({ length: 5 }, (_, index) => (
         <div
           className="p-3 border-border1 rounded-md border-2 my-2"
