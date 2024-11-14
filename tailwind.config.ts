@@ -15,30 +15,39 @@ const config: Config = {
         testColor: "#446712",
 
         // my custom color
-        primaryBG: "#FFFCF1",
-        secondaryBG: "#EAEAEA",
+        primaryBG: "#E7D3BA",
+        secondaryBG: "#D4C3A7",
 
-        customGold: "#C67C00",
-        customOrange: "#E67600",
+        customGold: "#6B4D32",
+        customOrange: "#7C5F4A",
 
-        border1: "#CFCFCF",
-        border2: "#DFDFDF",
+        border1: "#C3A482",
+        border2: "#D4C3A7",
 
-        activeOutline: "#FF8C00",
+        activeOutline: "#7C5F4A",
 
-        hoverBG: "#E1E1E1",
-        hoverText: "#AFAFAF",
+        hoverBG: "#7C5F4A",
+        hoverText: "#6B4D32",
+
+        // creamy & cozy theme
+        mainBG: "#D4C3A7",
+        header_bar: "#6B4D32",
+        primary_text: "#333333",
+        button_badge: "#C3A482",
+        icon_dark_brown: "#7C5F4A",
+        icon_beige: "#E7D3BA",
       },
       fontWeight: {
         "800": "800",
         "900": "900",
       },
       textColor: {
-        primaryText: "#0A0A0A",
+        primaryText: "#333333",
+        secondaryText: "#6B4D32",
 
-        dark: "#0A0A0A",
+        dark: "#333333",
         light: "#F0F0F0",
-        secondary: "#767676",
+        secondary: "#666666",
       },
     },
   },

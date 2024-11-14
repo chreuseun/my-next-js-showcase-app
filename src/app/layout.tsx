@@ -21,6 +21,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
+      {/* NOTE: body tag is a Flex-Container */}
       <body className="flex h-screen w-screen flex-col justify-center items-stretch text-primaryText bg-primaryBG">
         <Nav />
         {children}

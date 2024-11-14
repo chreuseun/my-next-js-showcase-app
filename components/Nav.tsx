@@ -61,7 +61,7 @@ const Nav = () => {
   };
 
   return (
-    <div className="border-b-8 pb-2 border-customGold px-10 pt-4 flex flex-row shadow-md">
+    <div className="border-b-8 pb-2 border-customGold px-10 pt-4 flex flex-row shadow-md w-full">
       <Link href={"/"}>
         <Image
           src={appLogo}
@@ -70,7 +70,7 @@ const Nav = () => {
           height={90}
         />
       </Link>
-      <div className="flex-grow flex flex-row justify-start items-stretch ">
+      <div className="2xl:border hidden md:flex flex-grow flex-row justify-start items-stretch ">
         {renderNavButton(navConfig.HOME)}
         {renderNavButton(navConfig.PROJECTS)}
         {renderNavButton(navConfig.SKILLS)}
