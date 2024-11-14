@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <main className="flex-grow overflow-y-auto w-full p-4">
       <div
-        className={`${geistSans.className} text-6xl md:text-7xl text-center font-extrabold mt-6 px-11`}
+        className={`${geistSans.className} text-5xl md:text-7xl text-center font-extrabold mt-6 px-11`}
       >
         {HOME_PAGE_COPIES.HEADER_GREETINGS_1}
       </div>
@@ -27,7 +27,7 @@ const Home = () => {
       </div>
 
       <div
-        className={`${geistSans.className} text-2xl md:text-lg text-justify font-mono px-11 mt-6`}
+        className={`${geistSans.className} m-auto text-xl md:text-lg text-justify font-mono px-5 md:max-w-4xl mt-6`}
       >
         {HOME_PAGE_COPIES.MY_DESCRIPTION}
       </div>
