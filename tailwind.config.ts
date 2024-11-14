@@ -12,7 +12,6 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        testColor: "#446712",
 
         // my custom color
         primaryBG: "#E7D3BA",
@@ -26,8 +25,8 @@ const config: Config = {
 
         activeOutline: "#7C5F4A",
 
-        hoverBG: "#7C5F4A",
-        hoverText: "#6B4D32",
+        hoverBG: "#E7D3BA",
+        hoverText: "#C3A482",
 
         // creamy & cozy theme
         mainBG: "#D4C3A7",

@@ -1,9 +1,12 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
-import { fontSpectral } from "@assets/fonts/fontsConfig";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import appLogo from "@root/assets/logos/app-logo.png";
-import Link from "next/link";
+import { fontSpectral } from "@assets/fonts/fontsConfig";
 
 interface INavButtonProp {
   label: string;
@@ -46,11 +49,21 @@ const navConfig: {
 };
 
 const Nav = () => {
+  const pathname = usePathname();
+
   const renderNavButton = ({ label, id, path }: INavButtonProp) => {
+    const isActive = path === pathname;
     return (
       <Link href={path}>
         <div
-          className={`select-none m-2 rounded-2xl flex items-center justify-center text-center p-4 cursor-pointer hover:bg-hoverNav hover:text-hoverText font-bold ${fontSpectral.className} text-2xl`}
+          className={`
+             ${
+               fontSpectral.className
+             } select-none m-2 rounded-2xl flex items-center justify-center text-center p-4 cursor-pointer  text-xl ${
+            isActive
+              ? "text-primaryText font-extrabold"
+              : "text-secondaryText hover:text-hoverText font-medium"
+          }`}
           id={id}
           key={id}
         >
@@ -61,16 +74,16 @@ const Nav = () => {
   };
 
   return (
-    <div className="border-b-8 pb-2 border-customGold px-10 pt-4 flex flex-row shadow-md w-full">
+    <div className="border-b-2  border-border1 px-10 flex flex-row justify-start items-center shadow-md w-full py-1">
       <Link href={"/"}>
         <Image
           src={appLogo}
           className="select-none md:mr-4 cursor-pointer"
           alt="eundev icon"
-          height={90}
+          height={80}
         />
       </Link>
-      <div className="2xl:border hidden md:flex flex-grow flex-row justify-start items-stretch ">
+      <div className="ml-6 hidden md:flex flex-grow flex-row justify-start items-stretch ">
         {renderNavButton(navConfig.HOME)}
         {renderNavButton(navConfig.PROJECTS)}
         {renderNavButton(navConfig.SKILLS)}
