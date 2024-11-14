@@ -62,7 +62,7 @@ const Nav = () => {
              } select-none m-2 rounded-2xl flex items-center justify-center text-center p-4 cursor-pointer  text-xl ${
             isActive
               ? "text-primaryText font-extrabold"
-              : "text-secondaryText hover:text-hoverText font-medium"
+              : "text-secondaryText hover:text-hoverText font-light hover:underline"
           }`}
           id={id}
           key={id}
