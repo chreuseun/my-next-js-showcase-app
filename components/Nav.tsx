@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import appLogo from "@root/assets/logos/app-logo.png";
-import { fontSpectral } from "@assets/fonts/fontsConfig";
+import { fontSpectral, geistMono } from "@assets/fonts/fontsConfig";
 
 interface INavButtonProp {
   label: string;
@@ -37,7 +37,7 @@ const navConfig: {
     path: "/projects",
   },
   CONTACTS: {
-    label: "Contacts",
+    label: "Contact Me",
     id: "contacts",
     path: "/contacts",
   },
@@ -53,6 +53,7 @@ const Nav = () => {
 
   const renderNavButton = ({ label, id, path }: INavButtonProp) => {
     const isActive = path === pathname;
+
     return (
       <Link href={path}>
         <div
@@ -64,7 +65,7 @@ const Nav = () => {
           id={id}
           key={id}
         >
-          <p>{label}</p>
+          <p className={`${geistMono.className}`}>{label}</p>
         </div>
       </Link>
     );
