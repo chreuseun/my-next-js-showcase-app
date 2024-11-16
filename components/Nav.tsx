@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import appLogo from "@root/assets/logos/app-logo.png";
-import { fontSpectral, geistMono } from "@assets/fonts/fontsConfig";
+import { geistMono } from "@assets/fonts/fontsConfig";
 
 interface INavButtonProp {
   label: string;
@@ -57,15 +57,14 @@ const Nav = () => {
     return (
       <Link href={path}>
         <div
-          className={`select-none m-2 rounded-2xl flex items-center justify-center text-center p-4 cursor-pointer  text-xl ${
-            isActive
-              ? "text-primaryText"
-              : "text-secondaryText hover:text-hoverText"
+          className={`flex-col select-none m-2 rounded-2xl flex items-center justify-center text-center p-4 cursor-pointer  text-xl text-primaryText ${
+            isActive ? "" : " hover:text-hoverText"
           }`}
           id={id}
           key={id}
         >
-          <p className={`${geistMono.className}`}>{label}</p>
+          <p className={`${geistMono.className} antialiased`}>{label}</p>
+          {isActive ? <div className="bg-border1 h-0.5 w-full" /> : null}
         </div>
       </Link>
     );
@@ -82,13 +81,13 @@ const Nav = () => {
         />
       </Link>
       <div
-        className={`ml-6 hidden md:flex flex-grow flex-row justify-start items-stretch ${fontSpectral.className}`}
+        className={`ml-6 hidden md:flex flex-grow flex-row justify-start items-stretch`}
       >
         {renderNavButton(navConfig.HOME)}
         {/* {renderNavButton(navConfig.PROJECTS)}
         {renderNavButton(navConfig.SKILLS)} */}
-        {renderNavButton(navConfig.ABOUT)}
         {renderNavButton(navConfig.CONTACTS)}
+        {renderNavButton(navConfig.ABOUT)}
       </div>
     </div>
   );

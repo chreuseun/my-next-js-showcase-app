@@ -28,7 +28,7 @@ const config: Config = {
         activeOutline: "#7C5F4A",
 
         hoverBG: "#E7D3BA",
-        hoverText: "#C3A482",
+        hoverText: "#D4C3A7",
 
         gradient_bg_dark: "#C2B6A9",
 

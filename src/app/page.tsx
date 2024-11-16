@@ -1,4 +1,4 @@
-import { geistSans, fontSpectral } from "@root/assets/fonts/fontsConfig";
+import { geistSans } from "@root/assets/fonts/fontsConfig";
 import SkillTree from "@root/components/pages/Home/SkillTreeSection";
 
 const HOME_PAGE_COPIES = {
@@ -23,7 +23,7 @@ const Home = () => {
         {HOME_PAGE_COPIES.HEADER_GREETINGS_2}
       </div>
       <div
-        className={`${fontSpectral.className} text-xl md:text-2xl text-center px-11  text-secondaryText`}
+        className={`text-xl md:text-2xl text-center px-11  text-secondaryText`}
       >
         {HOME_PAGE_COPIES.SUBHEADER_1}
       </div>

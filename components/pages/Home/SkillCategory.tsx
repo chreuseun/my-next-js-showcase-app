@@ -14,15 +14,15 @@ const Skill = ({ name, image, url, id, setDisplayTitle }: ISkillItem) => (
     key={id}
     onMouseEnter={() => setDisplayTitle(name)}
     onMouseLeave={() => setDisplayTitle("")}
-    className="flex flex-col items-center p-2 rounded-full border  border-border1 hover:border-border2 "
+    className="flex flex-col items-center p-3 rounded-full border  border-border1 hover:border-border2 "
   >
     <a href={url} target="_blank" rel="noopener noreferrer">
       <Image
         src={image}
         alt={name}
         className="object-contain"
-        width={30}
-        height={30}
+        width={50}
+        height={50}
       />
     </a>
   </div>
@@ -38,14 +38,14 @@ const SkillCategory = ({
   const [displayTitle, setDisplayTitle] = useState<string>("");
 
   return (
-    <div className="select-none text-primaryBG bg-cardBG_1 shadow-neumorphic rounded-lg px-6 pt-2 gap-2">
+    <div className="select-none text-primaryBG bg-cardBG_1 shadow-neumorphic rounded-lg px-6 pt-2 gap-2  w-full md:w-auto max-w-sm">
       <h2
         className={`text-lg font-semibold text-center ${geistMono.className}`}
       >
         {displayTitle || title}
       </h2>
 
-      <div className="flex flex-row justify-center p-2">
+      <div className="flex flex-wrap flex-row justify-center p-2">
         {skills.map((skill) => (
           <Skill key={skill.id} {...skill} setDisplayTitle={setDisplayTitle} />
         ))}
