@@ -84,10 +84,10 @@ const Nav = () => {
         className={`ml-6 hidden md:flex flex-grow flex-row justify-start items-stretch`}
       >
         {renderNavButton(navConfig.HOME)}
-        {/* {renderNavButton(navConfig.PROJECTS)}
-        {renderNavButton(navConfig.SKILLS)} */}
-        {/* {renderNavButton(navConfig.CONTACTS)}
-        {renderNavButton(navConfig.ABOUT)} */}
+        {renderNavButton(navConfig.PROJECTS)}
+        {renderNavButton(navConfig.SKILLS)}
+        {renderNavButton(navConfig.CONTACTS)}
+        {renderNavButton(navConfig.ABOUT)}
       </div>
     </div>
   );
