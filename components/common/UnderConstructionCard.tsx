@@ -8,7 +8,7 @@ const UnderConstruction = () => {
         Page Under Construction
       </h1>
       <p className="text-lg text-secondaryText mb-6">
-        We're working hard to bring you this page. Stay tuned!
+        {`We're working hard to bring you this page. Stay tuned!`}
       </p>
 
       <div className="flex justify-center items-center mb-6">
