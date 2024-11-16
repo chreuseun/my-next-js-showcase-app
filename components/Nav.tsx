@@ -86,8 +86,8 @@ const Nav = () => {
         {renderNavButton(navConfig.HOME)}
         {/* {renderNavButton(navConfig.PROJECTS)}
         {renderNavButton(navConfig.SKILLS)} */}
-        {renderNavButton(navConfig.CONTACTS)}
-        {renderNavButton(navConfig.ABOUT)}
+        {/* {renderNavButton(navConfig.CONTACTS)}
+        {renderNavButton(navConfig.ABOUT)} */}
       </div>
     </div>
   );
