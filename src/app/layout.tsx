@@ -2,8 +2,6 @@ import "@root/styles/globals.css";
 
 import type { Metadata } from "next";
 import Nav from "@components/Nav";
-import Provider from "@components/Provider";
-import TestFlexLayout from "@components/TestFlexLayout";
 import { APPLICATION } from "@root/constants/copies";
 
 export const metadata: Metadata = {
