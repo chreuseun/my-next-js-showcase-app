@@ -1,6 +1,6 @@
 import "@root/styles/home/animate-intro-text.css";
 
-import { geistSans } from "@root/assets/fonts/fontsConfig";
+import { geistMono, geistSans } from "@root/assets/fonts/fontsConfig";
 import SkillTree from "@root/components/pages/Home/SkillTreeSection";
 
 const HOME_PAGE_COPIES = {
@@ -35,6 +35,22 @@ const Home = () => {
         {HOME_PAGE_COPIES.MY_DESCRIPTION}
       </div>
       <SkillTree />
+
+      <div className="flex flex-col items-center mt-8">
+        <p className={`text-lg text-gray-800 ${geistSans.className} mb-2`}>
+          Feel free to reach out to me for any questions, schedule a discussion
+          or inquiries.
+        </p>
+
+        <a
+          href="mailto:eunillevillegaseunille@gmail.com"
+          className="text-primaryBG flex-shrink inline-flex items-center px-6 py-3 bg-cardBG_1 font-semibold rounded-full shadow-lg hover:bg-cardBG_1/80 focus:outline-none focus:ring-2 focus:ring-primaryBG transition-all"
+        >
+          <span
+            className={geistMono.className}
+          >{`Let's connect, Email Me`}</span>
+        </a>
+      </div>
     </main>
   );
 };
