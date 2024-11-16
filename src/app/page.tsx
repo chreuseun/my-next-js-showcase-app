@@ -1,3 +1,5 @@
+import "@root/styles/home/animate-intro-text.css";
+
 import { geistSans } from "@root/assets/fonts/fontsConfig";
 import SkillTree from "@root/components/pages/Home/SkillTreeSection";
 
@@ -13,7 +15,7 @@ const Home = () => {
   return (
     <main className="flex-grow overflow-y-auto w-full p-4">
       <div
-        className={`${geistSans.className} text-5xl md:text-7xl text-center font-extrabold mt-6 px-11`}
+        className={`${geistSans.className} text-5xl md:text-7xl text-center font-extrabold mt-6 px-11 animation-focus-in`}
       >
         {HOME_PAGE_COPIES.HEADER_GREETINGS_1}
       </div>

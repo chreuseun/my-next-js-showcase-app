@@ -1,3 +1,5 @@
+import "@root/styles/home/animate-intro-text.css";
+
 import React from "react";
 
 import quickSkillData from "@root/static/home/quick_skills.json";
@@ -5,7 +7,7 @@ import { geistMono } from "@root/assets/fonts/fontsConfig";
 import SkillCategory from "./SkillCategory";
 
 const SkillTreeSection = () => (
-  <div className="mt-4 flex flex-col item m-auto">
+  <div className="mt-4 flex flex-col item m-auto animation-focus-in">
     <h1
       className={`${geistMono.className} text-secondaryText text-xl font-bold text-center`}
     >
