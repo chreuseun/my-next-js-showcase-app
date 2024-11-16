@@ -1,52 +1,58 @@
-import { Metadata } from "next";
+import "@root/styles/home/animate-intro-text.css";
 
-import TextInput from "@root/components/common/TextInput";
-import CustomButton from "@root/components/common/CustomButton";
-import Link from "next/link";
-import { SIGNUP_PATH } from "@root/routes/paths";
+import { geistMono, geistSans } from "@root/assets/fonts/fontsConfig";
+import SkillTree from "@root/components/pages/Home/SkillTreeSection";
 
-export const metadata: Metadata = {
-  title: "Next.Js Showcase | Login page",
-  description:
-    "Welcome to Login page, enter your username and password or sign-up",
+const HOME_PAGE_COPIES = {
+  HEADER_GREETINGS_1: "Hi, I'm Eunille Villegas",
+  HEADER_GREETINGS_2: "A React Native & Web Developer",
+  SUBHEADER_1: "At your service, simply your app developer for all",
+  MY_DESCRIPTION: `
+I am a seasoned React Native developer with over 5 years of experience, specializing in crafting innovative, user-centric apps for iOS, Android, and the web. Currently leading UX/UI development at Growsari Enterprise, I excel in delivering seamless e-commerce solutions from concept to launch.`,
 };
 
-const LandingPage = () => {
+const Home = () => {
   return (
-    <div className="bg-bg2 min-h-screen flex flex-col justify-center items-center ">
-      <div className="bg-bg1 p-8 rounded-2xl flex flex-col justify-center items-stretch w-auto lg:w-1/4">
-        <div className="text-center mb-2 text-brand1 text-base lg:text-4xl font-bold">
-          Next.JS
-          <br />
-          Showcase App
-        </div>
-        <TextInput
-          placeholder="Username"
-          type="text"
-          className="mt-1 lg:mt-6 text-center"
-        />
-        <TextInput
-          placeholder="Password"
-          type="password"
-          className="mt-3 text-center"
-        />
-        <CustomButton className="mt-8" label="Login" />
-        <Link
-          className="mt-4 flex flex-col justify-center items-stretch"
-          href={SIGNUP_PATH}
-        >
-          <CustomButton
-            className="text-sm py-0 px-0 text-border2 font-thin underline border-none bg-inherit cursor-pointer hover:bg-bg2"
-            label="Create a new account"
-          />
-        </Link>
-        <CustomButton
-          className="text-sm py-0 px-0 text-border2 font-thin underline border-none bg-inherit cursor-pointer hover:bg-bg2 hover:text-brand2"
-          label="Need new account? Sign-Up"
-        />
+    <main className="flex-grow overflow-y-auto w-full p-4">
+      <div
+        className={`${geistSans.className} text-5xl md:text-7xl text-center font-extrabold mt-6 px-11 animation-focus-in`}
+      >
+        {HOME_PAGE_COPIES.HEADER_GREETINGS_1}
       </div>
-    </div>
+      <div
+        className={`${geistSans.className} text-3xl md:text-4xl text-center font-semibold   px-11 mt-3  text-secondaryText`}
+      >
+        {HOME_PAGE_COPIES.HEADER_GREETINGS_2}
+      </div>
+      <div
+        className={`text-xl md:text-2xl text-center px-11  text-secondaryText`}
+      >
+        {HOME_PAGE_COPIES.SUBHEADER_1}
+      </div>
+      <div
+        className={`${geistSans.className} m-auto text-xl md:text-lg text-justify font-mono px-5 md:max-w-4xl mt-6`}
+      >
+        {HOME_PAGE_COPIES.MY_DESCRIPTION}
+      </div>
+      <SkillTree />
+
+      <div className="flex flex-col items-center mt-8">
+        <p className={`text-lg text-gray-800 ${geistSans.className} mb-2`}>
+          Feel free to reach out to me for any questions, schedule a discussion
+          or inquiries.
+        </p>
+
+        <a
+          href="mailto:eunillevillegaseunille@gmail.com"
+          className="text-primaryBG flex-shrink inline-flex items-center px-6 py-3 bg-cardBG_1 font-semibold rounded-full shadow-lg hover:bg-cardBG_1/80 focus:outline-none focus:ring-2 focus:ring-primaryBG transition-all"
+        >
+          <span
+            className={geistMono.className}
+          >{`Let's connect, Email Me`}</span>
+        </a>
+      </div>
+    </main>
   );
 };
 
-export default LandingPage;
+export default Home;
