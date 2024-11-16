@@ -1,10 +1,12 @@
 import { geistSans, fontSpectral } from "@root/assets/fonts/fontsConfig";
+import SkillTree from "@root/components/pages/Home/SkillTreeSection";
 
 const HOME_PAGE_COPIES = {
   HEADER_GREETINGS_1: "Hi, I'm Eunille Villegas",
   HEADER_GREETINGS_2: "A React Native & Web Developer",
   SUBHEADER_1: "At your service, simply your app developer for all",
-  MY_DESCRIPTION: `I am a versatile React Native developer with over 5 years of experience, specializing in crafting innovative iOS, Android, and web apps using React JS. Currently, I lead UX/UI development at Growsari Enterprise, collaborating with developers, product teams, and executives to deliver user-centric e-commerce and shopping apps. Beyond development and coding, I am also responsible for the end-to-end process, including publishing apps to the App Store and Google Play, ensuring seamless deployment and high-quality user experiences from concept to launch.`,
+  MY_DESCRIPTION: `
+I am a seasoned React Native developer with over 5 years of experience, specializing in crafting innovative, user-centric apps for iOS, Android, and the web. Currently leading UX/UI development at Growsari Enterprise, I excel in delivering seamless e-commerce solutions from concept to launch.`,
 };
 
 const Home = () => {
@@ -25,12 +27,12 @@ const Home = () => {
       >
         {HOME_PAGE_COPIES.SUBHEADER_1}
       </div>
-
       <div
         className={`${geistSans.className} m-auto text-xl md:text-lg text-justify font-mono px-5 md:max-w-4xl mt-6`}
       >
         {HOME_PAGE_COPIES.MY_DESCRIPTION}
       </div>
+      <SkillTree />
     </main>
   );
 };

@@ -1,0 +1,63 @@
+{
+  "frontend": [
+    {
+      "id": "REACT_JS",
+      "name": "React.js",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+      "url": "https://react.dev"
+    },
+    {
+      "id": "REACT_NATIVE",
+      "name": "React Native",
+      "image": "https://reactnative.dev/img/header_logo.svg",
+      "url": "https://reactnative.dev"
+    },
+    {
+      "id": "X_CODE",
+      "name": "XCode",
+      "image": "https://developer.apple.com/assets/elements/icons/xcode/xcode-64x64_2x.png",
+      "url": "https://developer.apple.com/xcode"
+    },
+    {
+      "id": "ANDROID_STUDIO",
+      "name": "Android Studio",
+      "image": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/android-studio-icon.png",
+      "url": "https://developer.android.com/studio"
+    }
+  ],
+  "backend": [
+    {
+      "id": "NODE_JS",
+      "name": "Node.js",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+      "url": "https://nodejs.org/en"
+    },
+    {
+      "id": "TS",
+      "name": "TypeScript",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+      "url": "https://www.typescriptlang.org/"
+    }
+  ],
+
+  "database": [
+    {
+      "id": "MYSQL",
+      "name": "MySQL",
+      "image": "https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg",
+      "url": "https://www.mysql.com"
+    },
+    {
+      "id": "PostgreSQL",
+      "name": "PostgreSQL",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg",
+      "url": "https://www.postgresql.org/"
+    },
+    {
+      "id": "DYNAMODB",
+      "name": "DynamoDB",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/fd/DynamoDB.png",
+      "url": "https://aws.amazon.com/dynamodb/"
+    }
+  ]
+}

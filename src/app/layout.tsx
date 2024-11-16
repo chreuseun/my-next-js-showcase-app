@@ -22,7 +22,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       {/* NOTE: body tag is a Flex-Container */}
-      <body className="flex h-screen w-screen flex-col justify-center items-stretch text-primaryText bg-primaryBG">
+      <body className="flex h-screen w-screen flex-col justify-center items-stretch text-primaryText bg-gradient-to-r from-primaryBG to-gradient_bg_dark">
         <Nav />
         {children}
       </body>

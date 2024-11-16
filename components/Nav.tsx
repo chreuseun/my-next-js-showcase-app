@@ -56,13 +56,10 @@ const Nav = () => {
     return (
       <Link href={path}>
         <div
-          className={`
-             ${
-               fontSpectral.className
-             } select-none m-2 rounded-2xl flex items-center justify-center text-center p-4 cursor-pointer  text-xl ${
+          className={`select-none m-2 rounded-2xl flex items-center justify-center text-center p-4 cursor-pointer  text-xl ${
             isActive
-              ? "text-primaryText font-extrabold"
-              : "text-secondaryText hover:text-hoverText font-light hover:underline"
+              ? "text-primaryText"
+              : "text-secondaryText hover:text-hoverText"
           }`}
           id={id}
           key={id}
@@ -74,20 +71,21 @@ const Nav = () => {
   };
 
   return (
-    <div className="border-b-2  border-border1 px-10 flex flex-row justify-start items-center shadow-md w-full py-1">
+    <div className="px-10 flex flex-row justify-start items-center shadow-md w-full py-1">
       <Link href={"/"}>
         <Image
           src={appLogo}
           className="select-none md:mr-4 cursor-pointer"
-          alt="eundev icon"
+          alt="EunDev icon"
           height={80}
         />
       </Link>
-      <div className="ml-6 hidden md:flex flex-grow flex-row justify-start items-stretch ">
+      <div
+        className={`ml-6 hidden md:flex flex-grow flex-row justify-start items-stretch ${fontSpectral.className}`}
+      >
         {renderNavButton(navConfig.HOME)}
-        {renderNavButton(navConfig.PROJECTS)}
-        {renderNavButton(navConfig.SKILLS)}
-
+        {/* {renderNavButton(navConfig.PROJECTS)}
+        {renderNavButton(navConfig.SKILLS)} */}
         {renderNavButton(navConfig.ABOUT)}
         {renderNavButton(navConfig.CONTACTS)}
       </div>

@@ -1,0 +1,37 @@
+/* Container for the icon and title */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Center content vertically */
+}
+
+/* Box around each icon */
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* Add hover animation effect */
+.icon-box:hover {
+  transform: scale(1.1); /* Slight zoom-in effect */
+}
+
+/* Styling for the icon image */
+.icon {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s ease; /* Smooth icon transition */
+}
+
+/* Change title styling */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
